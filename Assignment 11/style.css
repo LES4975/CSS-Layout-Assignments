@@ -1,0 +1,158 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  margin: 5px;
+  background-color: black;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+  gap: 3px;
+}
+
+header,
+footer,
+h2,
+h3,
+h4,
+.home p,
+.contact {
+  padding: 10px;
+}
+
+main div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h6,
+p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.at-office {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 6;
+  justify-content: space-between;
+}
+
+.at-office header,
+.at-office h3,
+menu {
+  justify-content: flex-start;
+}
+
+.contact {
+  place-content: flex-end;
+}
+
+menu {
+  border-top: 2px solid black;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px 10px;
+  border-bottom: 2px solid black;
+}
+
+#top {
+  background-color: #eaeaea;
+}
+
+.home {
+  grid-row: span 4;
+}
+
+.home h2 {
+  margin: 20px 50% 0 0;
+}
+
+.service {
+  grid-column: 2/3;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service h2 {
+  margin: 0;
+}
+
+section {
+  grid-column: 3/-1;
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#img1 {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+
+#img2 {
+  grid-column: span 3;
+}
+
+#img3 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#img7 {
+  grid-column: span 2;
+}
+#img8 {
+  grid-row: span 2;
+}
+
+#img10 {
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+
+#img11 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+span {
+  font-size: 2em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

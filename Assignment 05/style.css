@@ -1,0 +1,97 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+header {
+  display: grid;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 10vw;
+  grid-column: 1/-1;
+}
+
+div {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-auto-rows: 20vh;
+  padding: 1vh 0;
+}
+
+p {
+  font-weight: 500;
+  display: grid;
+  grid-column: 2;
+}
+
+.slogan {
+  font-size: 24px;
+  align-items: start;
+}
+
+.name {
+  font-size: 12px;
+  align-items: end;
+}
+
+.box:nth-of-type(1) {
+  background-color: #bfbda7;
+}
+
+.box:nth-of-type(3) {
+  background-color: #fe4814;
+}
+
+.box:nth-of-type(5) {
+  background-color: #847e96;
+}
+
+.box:nth-of-type(6) {
+  background-color: #d0ff71;
+}
+
+.box:nth-of-type(7) {
+  background-color: #993433;
+}
+
+.box:nth-of-type(8) {
+  background-color: #3aaafa;
+}
+
+.box:nth-of-type(10) {
+  background-color: #41907a;
+}
+
+.box:nth-of-type(12) {
+  background-color: #e3c4e5;
+}
+
+.image {
+  background-size: 100% 100%;
+}
+
+.image:nth-of-type(2) {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/be/Bicho-pregui%C3%A7a_3.jpg");
+}
+
+.image:nth-of-type(4) {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/600ff4e0f88eb259bc101391/41cdc81a-9cd3-4588-a0e5-89a794c3f6d5/_DSC3258-widened-u.jpg");
+}
+
+.image:nth-of-type(9) {
+  background-image: url("https://expertphotography.b-cdn.net/wp-content/uploads/2017/06/BW-contrast-featured.jpg");
+}
+
+.image:nth-of-type(11) {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_March_2010-1.jpg");
+}
